@@ -12,6 +12,8 @@ import org.openjdk.jcstress.infra.results.IIZ_Result;
 @State
 @Outcome(id = "42, 42, true", expect = Expect.ACCEPTABLE, desc = "Singleton created only once")
 public class SingletonFactory7 {
+   //Joshua Bloch's code
+
     private volatile Singleton instance;
     private final Object lock = new Object();
 
